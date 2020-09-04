@@ -179,7 +179,7 @@ namespace Ovning3
 
         public void Talk()
         {
-            Console.WriteLine("Lift my curse!");
+            Console.WriteLine("Lift my curse!"); //:-)
         }
 
         public override string Stats()

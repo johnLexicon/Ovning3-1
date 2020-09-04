@@ -77,9 +77,9 @@ namespace Ovning3
                         Console.WriteLine(a.GetType());
                         Console.WriteLine(a.Stats());                               // F: Här anropas Stats() för varje element i listan. Eftersom varje klass har sin egen definierade Stats() så skrivs olika saker ut.
                         a.DoSound();
-                        if (a is IPerson)
+                        if (a is IPerson person) //Tips: Kan typ-casta direkt i villkoret.
                         {
-                            IPerson person = (IPerson)a;
+                            //IPerson person = (IPerson)a;
                             person.Talk();
                         }
                         Console.WriteLine();

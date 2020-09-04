@@ -4,6 +4,10 @@ using System.Text;
 
 namespace Ovning3
 {
+    /*
+     * Det är rätt som du har gjort, för denna uppgift behöver du inte ärva från Exception för att göra den throwable. 
+     * 
+     */
     abstract class UserError                                        // Jag kanske har missförstått uppgiften men jag gjorde bara så att de retunerade strängar, inte "throw new Exception()".
     {
         public abstract string UEMessage();
