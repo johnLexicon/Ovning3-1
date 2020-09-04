@@ -9,9 +9,9 @@ namespace Ovning3
         static void Main(string[] args)
         {
 
-            // TestEncapsulation();
-            // TestAnimalPolymorphism();
-            // TestDogPolymorphism();
+            TestEncapsulation();
+            TestAnimalPolymorphism();
+            TestDogPolymorphism();
             TestUserErrorPolymorphism();
 
 
@@ -169,19 +169,22 @@ namespace Ovning3
 
             /*
             
-            F:  Polymorphism är viktigt att behärska eftersom det gör koden mer flexibel, underhållbar och expanderbar.
+            F:  Polymorphism är viktigt att behärska eftersom det gör koden mer flexibel, underhållbar, expanderbar och lättförstådd.
 
 
-            F:  Det förändrar och förbättrar kod genom... exempel på hur den förbättrat denna kod. Foreach-loopen i TestUserErrorPolymorphism() skulle tex inte kunna vara
-                så kort utan polymorphism. Samma sak med Animal.Stats() som har en base-form men alla djur lägger sedan på sina unika egenskaper. Om
-                jag beslöt mig för att alla djur skulle ha en till egenskap (tex längd) så behöver jag bara ändra det på ett ställe, utan att de förlorar sina unika egenskaper.
+            F:  Exempel på hur min kod har förbättrats av polymorphism: foreach-loopen i TestUserErrorPolymorphism() 
+                skulle tex inte kunna vara så kort utan polymorphism. Samma sak med Animal.Stats() som har en base-form men alla djur lägger sedan 
+                på sina unika egenskaper. Om jag beslöt mig för att alla djur skulle ha en till egenskap (tex längd) så behöver jag bara ändra det 
+                på ett ställe, utan att de förlorar sina unika egenskaper.
                
              
              
             F:  Skillnad mellan Abtract Class och interface: 
             
-                - Interfaces har inga implementationer av sin medlemmar, abstract class kan ha det.
-                - Interfaces
+                - Interfaces har bara deklarationer, inga implementationer av sin medlemmar. Abstract class kan ha det (som min Animal.Stats()).
+                - Klasser kan ärva från flera interfaces men bara från en abstract class.
+                - Alla medlemmar i interfaces är public. I abtract class kan de ha andra access modifiers.
+                - Interfaces kan endast ha properties, methods, events och indexers. Abstract class kan ha alla typer av medlemmar som en concrete class har.
             */
 
         }
